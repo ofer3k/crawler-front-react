@@ -1,0 +1,411 @@
+.main-container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.header-a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.alink {
+    /* background-color: red; */
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.alink {
+    color: black;
+}
+
+.nav-link {
+    color: black !important;
+}
+
+.alink ul {
+    float: left;
+}
+
+.nav-container .start {
+    font-weight: 600;
+    color: black;
+}
+
+.navbar-nav>li {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.start {
+    border-radius: 9px;
+    border-width: 0.1em;
+    font-size: 15px;
+    padding: 10px 20px 10px 20px;
+    margin-left: 30px;
+}
+
+.start:hover {
+    color: white;
+}
+
+.brand {
+    font-weight: bolder;
+}
+
+.content {
+    /* margin-top: 0px; */
+    /* min-height:250px ; */
+}
+
+.talk {
+    padding-top: 125px;
+    border-right: black 2px solid;
+    /* border-bottom: red 2px solid; */
+    min-height: 250px;
+}
+
+.talk>h1 {
+    font-size: 60px !important;
+    font-weight: bold;
+    color: black;
+}
+
+ .showcase-img {
+    display: flex;
+    align-items: center;  
+ }  
+
+
+.no-bold {
+    font-weight: 100;
+}
+
+.bold-two {
+    font-weight: 200;
+}
+
+.bold-three {
+    font-weight: 300;
+}
+
+.bold-four {
+    font-weight: 400;
+    
+}
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.start-two {
+    background-color: #372F7F;
+    color: wheat;
+    margin-left: 0;
+    font-weight: 600;
+}
+
+.det-ails {
+    /* margin-top: 50px; */
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.icon-bra-ails {
+    padding-bottom: 30px;
+}
+
+.icon-ails {
+    color: #3F3D56 !important;
+    font-size: 40px;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    background-color: #212529;
+    padding-top: 25px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+.author {
+    text-decoration: none !important;
+}
+
+  .containeer {
+    margin: auto;
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 10vh;
+    /* width: 250px; */
+    animation: bounce 0.25s infinite alternate;
+  }
+  #dog_belly {
+    position: absolute;
+    height: 200px;
+    width: 55px;
+    left: 100px;
+    background-color: #654321;
+    transform: rotate(90deg);
+    border-radius: 2rem;
+    animation: bellymove 0.25s infinite alternate;
+    z-index: 2;
+  }
+  #dog_head {
+    position: absolute;
+    height: 100px;
+    width: 55px;
+    left: 172.5px;
+    top: 25px;
+    border-radius: 2rem;
+    background-color: #654321;
+    animation: headbob 0.5s infinite alternate ease-in-out;
+    transform-origin: bottom;
+  }
+  #dog_ear_right {
+    position: absolute;
+    height: 40px;
+    width: 30px;
+    left: -10px;
+    background-color: #3f2a14;
+    border-radius: 1rem;
+    animation: earflop 0.25s infinite alternate;
+  }
+  #dog_eye {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    left: 30px;
+    top: 10px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  #dog_eye #dog_eye_pupil {
+    height: 12px;
+    width: 12px;
+    background-color: #3f2a14;
+    border-radius: 50%;
+    transform: translateX(3px);
+  }
+  #dog_nose {
+    position: absolute;
+    width: 60px;
+    height: 25px;
+    top: 20px;
+    left: 15px;
+    background-color: #654321;
+    border-radius: 0 0 1rem 0;
+  }
+  #dog_nose_spot {
+    position: absolute;
+    left: 67.5px;
+    top: 15px;
+    width: 12.5px;
+    height: 12.5px;
+    background-color: #3f2a14;
+    border-radius: 50%;
+  }
+  #dog_leg_frontright {
+    position: absolute;
+    height: 40px;
+    width: 15px;
+    background-color: #654321;
+    top: 117.5px;
+    left: 190px;
+    border-radius: 2rem;
+    z-index: 1;
+    animation: legmove 0.5s infinite alternate ease-in-out;
+  }
+  #dog_leg_frontleft {
+    position: absolute;
+    height: 40px;
+    width: 15px;
+    background-color: #654321;
+    top: 117.5px;
+    left: 50px;
+    border-radius: 2rem;
+    animation: legmove 0.5s infinite alternate ease-in-out;
+    animation-delay: 0.5s;
+  }
+  #dog_leg_backleft {
+    position: absolute;
+    height: 40px;
+    width: 15px;
+    background-color: #3f2a14;
+    top: 117.5px;
+    left: 50px;
+    border-radius: 2rem;
+    animation: legmove 0.5s infinite alternate ease-in-out;
+    z-index: 0;
+  }
+  #dog_leg_backright {
+    position: absolute;
+    height: 40px;
+    width: 15px;
+    background-color: #3f2a14;
+    top: 117.5px;
+    left: 190px;
+    border-radius: 2rem;
+    animation: legmove 0.5s infinite alternate ease-in-out;
+    animation-delay: 0.5s;
+    z-index: 0;
+  }
+  #tail {
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    height: 15px;
+    background-color: #654321;
+    border-radius: 2rem;
+    animation: tailwag 0.25s infinite alternate ease-in-out;
+    transform-origin: right;
+  }
+  #shadow {
+    margin: auto;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    top: 60px;
+    /* width: 200px; */
+    height: 15px;
+    position: absolute;
+    background-color: #654321;
+    opacity: 0.15;
+    border-radius: 2rem;
+    animation: shadowmove 0.25s infinite alternate;
+  }
+
+  .green{
+      color: green;
+      border-bottom: 2px solid green;
+  }
+  .red{
+      color:red;
+      border-bottom: 2px solid red;
+  }
+  /* List */
+.ul1 {
+    counter-reset: index;  
+    padding: 0;
+    max-width: 300px;
+  }
+  
+  /* List element */
+  .li1 {
+    counter-increment: index; 
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Element counter */
+  .li1::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  
+  /* Element separation */
+  .li1 + .li1 {
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+/* abbr { border: 2px dashed red; } */
+abbr[title] {
+    position: relative;
+    text-decoration:none; 
+  }
+  
+
+  
+  @keyframes bellymove {
+    from {
+      width: 50px;
+    }
+    to {
+      width: 53.5px;
+    }
+  }
+  @keyframes headbob {
+    0% {
+      transform: rotate(2deg);
+    }
+    100% {
+      transform: rotate(-2deg);
+    }
+  }
+  @keyframes legmove {
+    0% {
+      transform: rotate(12deg) translateX(-5px);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+    100% {
+      transform: rotate(-12deg) translateX(5px);
+    }
+  }
+  @keyframes shadowmove {
+    from {
+      width: 200px;
+    }
+    to {
+      width: 195px;
+    }
+  }
+  @keyframes tailwag {
+    from {
+      width: 40px;
+      transform: rotate(25deg);
+    }
+    to {
+      width: 38px;
+      transform: rotate(12.5deg);
+    }
+  }
+  @keyframes earflop {
+    from {
+      transform: rotate(60deg);
+    }
+    to {
+      transform: rotate(45deg);
+    }
+  }
+  @keyframes bounce {
+    0 {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(4px);
+    }
+  }
+  
