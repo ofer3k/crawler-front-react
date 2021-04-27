@@ -62,8 +62,7 @@
 
 .talk {
     padding-top: 125px;
-    border-right: black 2px solid;
-    /* border-bottom: red 2px solid; */
+    border-right: #e9e9e9 2px solid;
     min-height: 250px;
 }
 
@@ -72,6 +71,21 @@
     font-weight: bold;
     color: black;
 }
+/* .talk_left{
+border-top:2px  black dotted;
+border-right:2px  black dotted;
+
+
+}
+.talk_middle{
+    border-bottom: 2px dotted black;
+    border-right: 2px dotted black;
+    
+}
+.talk_right{
+    border-top: 2px dotted black;
+    border-right: 2px dotted black;
+} */
 
  .showcase-img {
     display: flex;
@@ -343,6 +357,7 @@
 abbr[title] {
     position: relative;
     text-decoration:none; 
+    
   }
   
 

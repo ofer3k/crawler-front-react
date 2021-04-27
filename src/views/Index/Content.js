@@ -21,7 +21,7 @@ setIsActive(!isActive);
 function reset() {
 setSeconds(0);
 setIsActive(false);
-axios.delete('http://localhost:8000/api/postsall')
+axios.delete('https://crawler-server1.herokuapp.com/api/postsall')
 .then(function (response) {
   // handle success
   setData([])
@@ -42,7 +42,7 @@ let interval = null;
 if (isActive) {
   interval = setInterval(() => {
     setSeconds(seconds => seconds + 1);
-    axios.get('http://localhost:8000/api/posts')
+    axios.get('https://crawler-server1.herokuapp.com/api/posts')
     .then(function (response) {
       // handle success
       setData(response.data)
@@ -70,7 +70,7 @@ const listItems = data.map((url) =>
 function handleSubmit(event){
 event.preventDefault()
 // console.log(event)
-axios.get('http://localhost:8000/api/crawl')
+axios.get('https://crawler-server1.herokuapp.com/api/crawl')
 .then(function (response) {
   // handle success
   setData(response.data)
@@ -92,7 +92,7 @@ alert('submit')
         <div class='content-background'>
             <div className="container content">
                 <div className="row">
-                    <div className="col-sm-3 talk ">
+                    <div className="col-sm-3 talk talk_left ">
                     <Form >
                     <Button variant="primary" type="submit" onClick={handleSubmit}>
                     <abbr title='You can require multiple workers to do the job. They will work horizontally and speed up the process while communicating with each other' tabindex="0" >Add a worker</abbr>
@@ -100,17 +100,17 @@ alert('submit')
                      </Form>
                     </div>
 
-                    <div className="col-sm-3 talk">
+                    <div className="col-sm-3 talk talk_middle">
                       <Button  variant="success" onClick={toggle} className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`}>   
                      
-                     <abbr title={isActive?'Stop fetching the data':'The workers crawl across the network and feed the information into a database. Click here and you will receive the information stored from the database '}>{isActive ? 'Pause' : 'Fetch'} </abbr>
+                     <abbr title={isActive?'Stop the interval':'The workers crawl across the network and feed the information into a database. Click here and you will receive the information stored from the database '}>{isActive ? 'Pause' : 'Fetch'} </abbr>
                      </Button>
                      <Button variant='danger' className="button" onClick={reset}>
-                       <abbr title='delete all the information'>Reset</abbr>
+                       <abbr title='Delete all the information from the database'>Reset</abbr>
                      </Button>
                     </div>
                     
-                    <div className="col-sm-6 ">
+                    <div className="col-sm-6 talk_right half-a-border-on-bottom">
                         <ul className="bold-four scroll" style={{maxHeight: '210px', overflow: 'auto' ,paddingTop:'20px'}}>
                         {listItems}
                         </ul>
@@ -136,7 +136,7 @@ alert('submit')
                                     <i class="icon-layers m-auto text-primary icon-ails"></i>
                                 </div>
                                 <h5>Horizontality</h5>
-                                <p class="lead mb-0">You will decide how many workers will do the job.</p>
+                                <p class="lead mb-0">You can decide how many workers will do the job.</p>
                             </div>
                         </div>
                         <div class="col-lg-4">
